@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "constate": "^1.1.1",
     "immer": "^2.0.0",
     "isomorphic-fetch": "^2.2.1",
     "react": "^16.8.2",

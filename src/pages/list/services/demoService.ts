@@ -3,11 +3,21 @@ import env from 'src/utils/env';
 
 const testUrl = env.TEST_URL;
 
-function queryList(params: any) {
+interface IListItem {
+  id: number;
+  name: string;
+}
+
+interface IResponse<T> {
+  code: number;
+  body: T;
+}
+
+function queryList(params): Promise<IResponse<IListItem[]>> {
   return request({
     url: `${testUrl}/list`,
     params,
-  });
+  }) as any;
 }
 
 export default {

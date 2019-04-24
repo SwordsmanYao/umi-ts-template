@@ -1,47 +1,20 @@
 import React from 'react';
-import { connect } from 'dva';
-import { Button } from 'antd';
+import useCounterContext from '../contexts/useCounterContext';
 
-interface IProps {
-  count: number;
-  dispatch: (x: any) => {};
-}
+function Count() {
+  const { count, increment, asyncIncrement } = useCounterContext();
 
-class Count extends React.Component<IProps, any> {
-  public render() {
-    const { count, dispatch } = this.props;
-
-    return (
+  return (
+    <div>
+      <div>Count: {count}</div>
+      <br />
       <div>
-        <div>Count: {count}</div>
-        <br />
-        <div>
-          <Button
-            type="primary"
-            onClick={() => {
-              dispatch({ type: 'count/increase' });
-            }}
-          >
-            Increase
-          </Button>
-          <Button
-            type="ghost"
-            onClick={() => {
-              dispatch({ type: 'count/decrease' });
-            }}
-          >
-            Decrease
-          </Button>
-        </div>
+        <button onClick={increment}>Increase</button>
+        &nbsp;
+        <button onClick={asyncIncrement}>asyncIncrement</button>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
-function mapStateToProps(state) {
-  return {
-    count: state.count,
-  };
-}
-
-export default connect(mapStateToProps)(Count);
+export default Count;
