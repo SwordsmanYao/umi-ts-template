@@ -1,0 +1,97 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-config-airbnb",
+    "tslint-config-prettier"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**/*.ts",
+      "mock/**/*.js",
+      ".umirc.js"
+    ]
+  },
+  "rules": {
+    "trailing-comma": [true, {
+      "multiline": {
+        "objects": "ignore",
+        "arrays": "always",
+        "functions": "always",
+        "typeLiterals": "always",
+        "imports": "always",
+        "exports": "always"
+      },
+      "singleline": "never"
+    }],
+    "semicolon": [true, "always", "strict-bound-class-methods"],
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      },
+      {
+        "call-signature": "onespace",
+        "index-signature": "onespace",
+        "parameter": "onespace",
+        "property-declaration": "onespace",
+        "variable-declaration": "onespace"
+      }
+    ],
+    "prefer-for-of": true,
+    "no-parameter-reassignment": true,
+    "curly": [true, "ignore-same-line"],
+    "no-duplicate-super": true,
+    "no-duplicate-switch-case": true,
+    "no-duplicate-variable": true,
+    "no-switch-case-fall-through": true,
+    "no-this-assignment": true,
+    "no-unsafe-finally": true,
+    "prefer-object-spread": true,
+    "switch-default": true,
+    "indent": [true, "spaces", 2],
+    "arrow-parens": [true, "ban-single-arg-parens"],
+    "space-before-function-paren": [true, {
+      "anonymous": "always",
+      "named": "never",
+      "asyncArrow": "always",
+      "method": "never",
+      "constructor": "never"
+    }],
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double",
+      "avoid-escape",
+      "avoid-template"
+    ],
+    "switch-final-break": true,
+    "whitespace": [
+      true,
+      "check-decl",
+      "check-operator",
+      "check-module",
+      "check-separator",
+      "check-rest-spread",
+      "check-type",
+      "check-typecast",
+      "check-type-operator",
+      "check-preblock"
+    ],
+    "jsx-boolean-value": false,
+    "object-literal-sort-keys": false,
+    "no-console": false,
+    "ordered-imports": false,
+    "jsx-no-lambda": false,
+    "import-name": false,
+    "function-name": false,
+    "variable-name": false,
+    "object-shorthand-properties-first": false,
+    "member-ordering": false,
+    "array-type": false
+  }
+}
