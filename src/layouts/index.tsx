@@ -22,9 +22,3 @@ class Layouts extends Component<IProps> {
 }
 
 export default Layouts;
-
-// url 变化了，但页面组件也刷新，是什么原因？
-// layouts/index.js 里如果用了 connect 传数据，需要用 umi/withRouter 高阶一下。
-// import withRouter from 'umi/withRouter';
-
-// export default withRouter(connect(mapStateToProps)(LayoutComponent));

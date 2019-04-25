@@ -2,8 +2,6 @@
  * 重要：请通过 utils/env访问环境变量，不要直接引入 window
  */
 
-// 该配置文件单独打包方案等待 umi 新功能：https://github.com/umijs/umi/issues/1086
-
 let config: IEnvConfig = {
   // 接口地址
   TEST_URL: '__TEST_URL__',

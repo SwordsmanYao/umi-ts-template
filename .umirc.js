@@ -11,7 +11,7 @@ export default {
     ['umi-plugin-react', {
       // antd: true,
       routes: {
-        exclude: [/models\//, /services\//, /components\//, /typings\//, /utils\//, /interfaces\//],
+        exclude: [/contexts\//, /services\//, /components\//, /typings\//, /utils\//, /interfaces\//],
       },
       locale: {
         default: 'zh-CN',
@@ -19,7 +19,7 @@ export default {
       },
       dynamicImport: {
         webpackChunkName: true,
-        // loadingComponent: './components/Loading',
+        loadingComponent: './components/Loading',
       },
       title: {
         defaultTitle: 'umi-ts-template',
