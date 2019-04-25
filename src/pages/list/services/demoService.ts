@@ -13,11 +13,11 @@ interface IResponse<T> {
   body: T;
 }
 
-function queryList(params): Promise<IResponse<IListItem[]>> {
-  return request({
+function queryList(params) {
+  return request<IResponse<IListItem[]>>({
     url: `${testUrl}/list`,
     params,
-  }) as any;
+  });
 }
 
 export default {
