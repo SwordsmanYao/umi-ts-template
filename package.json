@@ -14,8 +14,11 @@
     "constate": "^1.1.1",
     "immer": "^2.0.0",
     "isomorphic-fetch": "^2.2.1",
+    "keyboardjs": "^2.5.1",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
+    "react-use": "^8.2.0",
+    "rebound": "^0.1.0",
     "umi": "^2.3.0-beta.6",
     "umi-plugin-react": "^1.3.0-beta.6"
   },
@@ -35,7 +38,7 @@
     "tslint-config-airbnb": "^5.11.1",
     "tslint-config-prettier": "^1.16.0",
     "tslint-react": "^3.6.0",
-    "typescript": "^3.1.6"
+    "typescript": "^3.4.5"
   },
   "husky": {
     "hooks": {
