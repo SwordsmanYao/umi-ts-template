@@ -35,12 +35,6 @@ export default {
     // "@primary-color": "#1DA57A",
   },
   // theme: "./theme-config.js"，
-  browserslist: [
-    '>1%',
-    'last 4 versions',
-    'Firefox ESR',
-    'not ie < 9', // React doesn't support IE8 anyway
-  ],
   // 单纯做复制的文件列表
   // copy: [
   //   {

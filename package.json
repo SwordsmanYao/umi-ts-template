@@ -13,17 +13,15 @@
     "axios": "^0.18.0",
     "constate": "^1.1.1",
     "immer": "^2.0.0",
-    "isomorphic-fetch": "^2.2.1",
     "keyboardjs": "^2.5.1",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-use": "^8.2.0",
     "rebound": "^0.1.0",
-    "umi": "^2.3.0-beta.6",
-    "umi-plugin-react": "^1.3.0-beta.6"
+    "umi": "^2.6.16",
+    "umi-plugin-react": "^1.7.5"
   },
   "devDependencies": {
-    "@types/isomorphic-fetch": "^0.0.34",
     "@types/node": "^8.10.38",
     "@types/react": "^16.8.3",
     "babel-plugin-module-resolver": "^3.1.1",
